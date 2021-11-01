@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent (v.getContext(), Activity_Datos.class);
-
                 intent.putExtra(NombreEnviado, txtNombres.getText().toString());
                 intent.putExtra(ApellidoEnviado, txtApellido.getText().toString());
                 intent.putExtra(EdadEnviado, txtEdad.getText().toString());
